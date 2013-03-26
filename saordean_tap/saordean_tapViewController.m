@@ -44,22 +44,20 @@ NSInteger pressCount;
     view = [saordean_tapViewController alloc];
     
     
-    // Code to implement an alert
-    //    NSString *msg = [[NSString alloc] initWithFormat:@"The button has been pressed %@ times",
-    //                    [NSString numberToString pressCount]];
-    // NSString *msg = [[NSString alloc  ] numberToString:pressCount];
-    //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Button Alert"
-    //                                                    message:msg
-    //                                                   delegate:self
-    //                                          cancelButtonTitle:@"OK"
-    //                                          otherButtonTitles:nil];
-    //    [alert show];
     
-    // Update the Label: daysToBDLabel with the count of button presses
     if (pressCount <= 8) {
         ++pressCount;
-        
+    } else {
+        // Code to implement an alert
+        NSString *msg = [[NSString alloc] initWithFormat:@"Increment greater than allowed ( %d). Press OK to continue",pressCount];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Over Increment Limit"
+                                                        message:msg
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
+    // Update the Label: pressCountLabel each time the increment button is pressed
     pressCountLabel.text = [NSString stringWithFormat:@"%d",pressCount];
     [self presentViewController:view
                        animated:YES completion:Nil];
@@ -73,22 +71,22 @@ NSInteger pressCount;
     view = [saordean_tapViewController alloc];
     
     
-    // Code to implement an alert
-    //    NSString *msg = [[NSString alloc] initWithFormat:@"The button has been pressed %@ times",
-    //                    [NSString numberToString pressCount]];
-    // NSString *msg = [[NSString alloc  ] numberToString:pressCount];
-    //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Button Alert"
-    //                                                    message:msg
-    //                                                   delegate:self
-    //                                          cancelButtonTitle:@"OK"
-    //                                          otherButtonTitles:nil];
-    //    [alert show];
     
-    // Update the Label: daysToBDLabel with the count of button presses
+    
     if (pressCount > 0) {
         --pressCount;
-        
+    } else {
+    
+        // Code to implement an alert if a decrement goes below zero
+        NSString *msg = [[NSString alloc] initWithFormat:@"Decrement less than allowed (%d). Press OK to continue",pressCount];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Under Decrement"
+                                                        message:msg
+                                                       delegate:self
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
     }
+    // Update the Label: pressCountLabel eache time with the decrement button is pressed
     pressCountLabel.text = [NSString stringWithFormat:@"%d",pressCount];
     [self presentViewController:view
                        animated:YES completion:Nil];

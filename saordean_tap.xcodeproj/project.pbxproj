@@ -24,6 +24,8 @@
 		F2C07DF617020BEA007DCA74 /* tapbg.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF217020BEA007DCA74 /* tapbg.png */; };
 		F2C07DF817020C02007DCA74 /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF717020C02007DCA74 /* decrement.png */; };
 		F2C07DFA17023509007DCA74 /* anastasi.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C07DF917023509007DCA74 /* anastasi.png */; };
+		F2F570BE1702507F0047CB5C /* Great_Horned_Owl_57.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */; };
+		F2F570C0170250900047CB5C /* Great_Horned_Owl_114.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		F2C07DF217020BEA007DCA74 /* tapbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapbg.png; sourceTree = "<group>"; };
 		F2C07DF717020C02007DCA74 /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decrement.png; sourceTree = "<group>"; };
 		F2C07DF917023509007DCA74 /* anastasi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anastasi.png; sourceTree = "<group>"; };
+		F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Great_Horned_Owl_57.png; sourceTree = "<group>"; };
+		F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Great_Horned_Owl_114.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		F212FF57170115F80027683E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F2F570BF170250900047CB5C /* Great_Horned_Owl_114.png */,
+				F2F570BD1702507F0047CB5C /* Great_Horned_Owl_57.png */,
 				F2C07DF917023509007DCA74 /* anastasi.png */,
 				F2C07DF717020C02007DCA74 /* decrement.png */,
 				F2C07DEF17020BEA007DCA74 /* increment.png */,
@@ -195,6 +201,8 @@
 				F2C07DF617020BEA007DCA74 /* tapbg.png in Resources */,
 				F2C07DF817020C02007DCA74 /* decrement.png in Resources */,
 				F2C07DFA17023509007DCA74 /* anastasi.png in Resources */,
+				F2F570BE1702507F0047CB5C /* Great_Horned_Owl_57.png in Resources */,
+				F2F570C0170250900047CB5C /* Great_Horned_Owl_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
