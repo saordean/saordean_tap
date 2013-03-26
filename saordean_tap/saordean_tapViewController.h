@@ -11,7 +11,9 @@
 @interface saordean_tapViewController : UIViewController
 
 @property (strong,nonatomic) IBOutlet UILabel* pressCountLabel;
+@property (strong,nonatomic) IBOutlet UILabel* pressDecrementLabel;
 -(IBAction) blueButton:(id) sender;
+-(IBAction) redButton:(id) sender;
 
 @end
 
